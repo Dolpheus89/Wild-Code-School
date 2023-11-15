@@ -1,7 +1,6 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-
 }
 
 a:link,
@@ -24,6 +23,13 @@ a:hover {
     color: white;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
 nav {
     margin-top: 0;
     height: 3.5rem;
@@ -41,4 +47,67 @@ nav ul li {
     margin: 0 15px;
     font-weight: bold;
     line-height: 3.5rem;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    height: 10%;
+    width: 80%;
+    background-color: lightgray;
+    border-radius: 8px;
+    font-size: 2.5rem;
+    line-height: 5.5rem;
+    text-align: center;
+    margin: 3rem
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+form {
+    width: 60%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    min-height: 2.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    background-color: rgb(221, 219, 219);
+    border: none;
+}
+
+button {
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 16%;
+    height: 2.2rem;
+}
+
+button:active {
+    border: #a306b6 1px solid;
+    color: #a306b6;
+    background-color: white;
+}
+
+footer {
+    color: white;
+    background-color: grey;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding-left: 1.5rem;
 }

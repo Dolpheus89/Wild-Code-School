@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-    font-size: 42px;
+    font-size: clamp(0.5rem, 35px, 3rem);
 }
 
 h2 {
@@ -26,6 +26,10 @@ h3 {
     margin-left: 8px;
 }
 
+div:first-child {
+    width: 100%;
+}
+
 nav {
     background-color: #a306b6;
     color: white;
@@ -34,7 +38,7 @@ nav {
 
 ul {
     list-style: none;
-    display: inline-flex;
+    display: flex;
     padding: 0;
 }
 
@@ -57,16 +61,18 @@ header {
 section {
     max-width: 65ch;
     margin-top: 50px 0 50px 0;
+    margin-bottom: 50px;
 }
 
 section div {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 article {
     margin: 10px;
-    height: 75px;
+    min-height: 75px;
     background-color: white;
     border-radius: 10px;
     padding: 20px;
@@ -84,4 +90,67 @@ footer {
     width: 100%;
     padding: 20px;
 
+}
+
+@media screen and (min-width:768px) and (max-width: 1200px) {
+    nav {
+        display: flex;
+    }
+
+    ul {
+        margin: 0 25px;
+    }
+
+    section div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    article {
+        color: #a306b6;
+    }
+
+    article:first-child {
+        grid-row: 1 /span 2;
+        grid-column: 1 / span 2;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    nav {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    nav ul li {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 5rem;
+    }
+
+    section {
+        margin: 50px 10px;
+    }
+
+    article {
+        color: #a306b6;
+    }
+
+    article:first-child {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media screen {
+    header h1 {
+        filter: drop-shadow(5px 5px 15px black);
+    }
 }
