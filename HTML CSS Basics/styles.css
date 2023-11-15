@@ -7,6 +7,10 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
     background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 h1 {
@@ -25,6 +29,7 @@ h3 {
 nav {
     background-color: #a306b6;
     color: white;
+    width: 100%;
 }
 
 ul {
@@ -39,13 +44,14 @@ ul li {
 }
 
 header {
-    background-image: url(/assets/382-1920x600.jpg);
+    background-image: url(assets/382-1920x600.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 250px;
     color: white;
+    width: 100%;
 }
 
 section {
@@ -76,8 +82,6 @@ footer {
     color: white;
     height: 60px;
     width: 100%;
-    position: fixed;
-    bottom: 0px;
     padding: 20px;
 
 }

@@ -1,0 +1,44 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+
+}
+
+a:link,
+a:active,
+a:visited {
+    color: white;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    padding: 0 5px;
+}
+
+a:hover {
+    background-color: white;
+    color: #a306b6;
+}
+
+.purple {
+    background-color: #a306b6;
+    color: white;
+}
+
+nav {
+    margin-top: 0;
+    height: 3.5rem;
+}
+
+nav ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    padding: 0;
+
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-weight: bold;
+    line-height: 3.5rem;
+}
