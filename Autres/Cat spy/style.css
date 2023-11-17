@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+
+:root {
+    --mainColor: #341E45;
+}
+
+* {
+    font-family: 'Jockey One', sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: var(--mainColor);
+    height: 120vh;
+}
+
+header {
+    width: 100%;
+    height: 65%;
+    background: url(/assets/image\ 10.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#headerText {
+    font-size: 6rem;
+    font-weight: lighter;
+    display: inline-block;
+    color: var(--mainColor);
+    text-shadow: #ffbe1b9c 4px 0px 45px;
+    margin: 3% 0 0 10%;
+    line-height: 8rem;
+}
+
+.headerButtonContainer {
+    width: 20%;
+    height: 20%;
+    align-self: flex-end;
+    text-align: center;
+    position: relative;
+    bottom: 23%;
+    right: 23%;
+}
+
+.headerButtonContainer h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 2.8rem;
+    font-weight: lighter;
+    width: 400px;
+}
+
+.headerButtonContainer button {
+    color: white;
+    border: none;
+    width: 230px;
+    height: 55px;
+    border-radius: 25px;
+    background-color: var(--mainColor);
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-left: 75px;
+}
+
+.mainTitle {
+    color: white;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: lighter;
+    width: 500px;
+    margin: 10% auto;
+}
+
+
+#agentsBlock {
+    width: 90%;
+    border: 5px solid #ffbf1b;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.agentContainer {
+    margin: 10%;
+    width: 100%;
+}
+
+.agentPicture {
+    border-radius: 50%;
+    outline: solid 35px var(--mainColor);
+    height: 280px;
+    width: 280px;
+    position: relative;
+    z-index: 1;
+    top: 125px;
+    left: 78px;
+}
+
+.agent1 {
+    background-image: url(assets/agent1.png);
+    background-size: cover;
+}
+
+.agent2 {
+    background-image: url(assets/agent2.png);
+    background-size: cover;
+}
+
+.agent3 {
+    background-image: url(assets/agent3.png);
+    background-size: cover;
+}
+
+.agent4 {
+    background-image: url(assets/agent4.png);
+    background-size: cover;
+}
+
+
+.agentCV {
+    background-color: white;
+    border-radius: 50%;
+    height: 455px;
+    width: 455px;
+    position: relative;
+    z-index: -2;
+    text-align: center;
+}
+
+.agentCV h2 {
+    padding-top: 155px;
+}
+
+.agentCV p {
+    font-size: 1.3em;
+    font-family: 'Jacques Francois', serif;
+    width: 80%;
+    text-align: start;
+    margin: auto;
+}
+
+.agentTitle {
+    color: var(--mainColor);
+    font-size: 3.5em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.agentJob {
+    background-color: #ffbf1b;
+    height: 75px;
+    width: 360px;
+    position: relative;
+    bottom: 50px;
+    left: 40px;
+}
+
+
+
+@media screen and (min-width:1550px) {
+    header {
+        height: 75%;
+    }
+
+}
+
+@media screen and (max-width:1280px) {
+
+    .agentPicture {
+        height: 230px;
+        width: 230px;
+    }
+
+    .agentCV {
+        height: 380px;
+        width: 380px;
+    }
+
+    .agentTitle {
+        font-size: 2.5em;
+    }
+
+    .agentCV p {
+        font-size: 1em;
+    }
+
+    .agentJob {
+        height: 55px;
+        width: 310px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    header {
+        height: 45%;
+    }
+
+    #agentsBlock {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: auto;
+    }
+
+    .agentContainer {
+        margin: auto;
+        width: 60%;
+    }
+
+    .headerButtonContainer {
+        bottom: 20%;
+        right: 30%;
+    }
+
+    .headerButtonContainer h2 {
+        font-size: 1.8rem;
+        width: 250px;
+    }
+
+    .headerButtonContainer button {
+        font-size: 1.8rem;
+        width: 150px;
+        height: 40px;
+        margin-left: 120px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    header {
+        height: 35%;
+    }
+
+    #headerText {
+        font-size: 5rem;
+    }
+
+    .headerButtonContainer {
+        right: 50%;
+    }
+
+    .mainTitle {
+        font-size: 5rem;
+        width: 360px;
+    }
+
+    .agentPicture {
+        height: 150px;
+        width: 150px;
+        outline: solid 15px var(--mainColor);
+        top: 85px;
+    }
+
+    .agentCV {
+        height: 300px;
+        width: 300px;
+    }
+
+    .agentTitle {
+        font-size: 2em;
+    }
+
+    .agentCV h2 {
+        padding-top: 100px;
+    }
+
+    .agentCV p {
+        font-size: 0.8em;
+    }
+
+    .agentJob {
+        height: 45px;
+        width: 260px;
+        bottom: 40px;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    #headerText {
+        font-size: 4rem;
+    }
+
+    .mainTitle {
+        font-size: 4rem;
+    }
+
+
+    .headerButtonContainer {
+        right: 60%;
+    }
+
+    .headerButtonContainer h2 {
+        font-size: 1.5rem;
+    }
+
+    .headerButtonContainer button {
+        font-size: 1.5rem;
+    }
+
+    .agentContainer {
+        margin: auto 2%;
+        width: 60%;
+    }
+
+}
